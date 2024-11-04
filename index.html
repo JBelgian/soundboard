@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Soundboard</title>
 </head>
 <body>
-    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 pt-20 pl-20">
+        <audio id="vineBoom">
+            <source src="sounds/vine-boom.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="buzzer">
+            <source src="sounds/wrong-answer-sound-effect.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="hawkTuah">
+            <source src="sounds/hawk-tuah-short.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="ohNoNo">
+            <source src="sounds/oh-no-no-no-no-laugh.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="goofyAhh">
+            <source src="sounds/goofy-ahh-sounds.mp3" type="audio/mpeg">
+        </audio>
+        <div>
+            <button id="button1" onclick="document.getElementById('goofyAhh').play()" class="bg-blue-500 hover:bg-blue-700 p-10 rounded-full">
+            </button>
+            <p><label for="button1">Goofy ahh</label></p>
+        </div>
+        <div>
+            <button id="button2" onclick="document.getElementById('buzzer').play()" class="bg-red-500 hover:bg-red-700 p-10 rounded-full">
+            </button>
+            <p><label for="button2">Buzzer</label></p>
+        </div>
+        <div>
+            <button id="button3" onclick="document.getElementById('vineBoom').play()" class="bg-green-500 hover:bg-green-700 p-10 rounded-full">
+            </button>
+            <p><label for="button3">Vine boom</label></p>
+        </div>
+        <div>
+            <button id="button4" onclick="document.getElementById('hawkTuah').play()" class="bg-orange-500 hover:bg-orange-700 p-10 rounded-full">
+            </button>
+            <p><label for="button4">Hawk tuah</label></p>
+        </div>
+        <div>
+            <button id="button5" onclick="document.getElementById('ohNoNo').play()" class="bg-gray-500 hover:bg-gray-700 p-10 rounded-full">
+            </button>
+            <p><label for="button5">Oh no no</label></p>
+        </div>
+    </div>
 </body>
 </html>
